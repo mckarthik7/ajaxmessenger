@@ -1,9 +1,5 @@
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="resources/styles/loginStyle.css">
-	</head>
-	<body>
 		<?php
+		include 'connect.php';
 		session_start();
 		if(isset($_SESSION['signed_in'])&&$_SESSION['signed_in']==true)
 					{
@@ -98,5 +94,10 @@
 				}
 				
 		?>
+		<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="resources/styles/loginStyle.css">
+	</head>
+	<body>
 	</body>
 </html>
